@@ -5,6 +5,7 @@
 package info;
 
 import model.Prova;
+import view.MyFrame;
 
 
 /**
@@ -22,6 +23,9 @@ public class Info {
         Prova p = new Prova("Reda", "Essalhi");
         System.out.println(p.getName());
         System.out.println(p.getSurname());
+        
+        MyFrame myWin= new MyFrame(p);
+        myWin.setVisible(true);
     }
     
 }

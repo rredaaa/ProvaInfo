@@ -5,19 +5,25 @@
 package view;
 
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import model.Prova;
 
 /**
  *
  * @author Utente
  */
 public class MyFrame extends JFrame{
-
-    public MyFrame() {
+    private Prova p;
+    public MyFrame(Prova p) {
         
-        this.setLayout(new BorderLayout());
+        
+        this.setLayout(new FlowLayout());
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(500, 500);
+        this.add(new JLabel(p.getName()));
+        this.add(new JLabel(p.getSurname()));
     }
     
     
