@@ -20,8 +20,8 @@ public class Info {
         // TODO code application logic here
         
         Prova p = new Prova("Reda", "Essalhi");
-        System.out.println(p);
-        
+        System.out.println(p.getName());
+        System.out.println(p.getSurname());
     }
     
 }
