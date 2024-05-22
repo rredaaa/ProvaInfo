@@ -4,6 +4,9 @@
  */
 package info;
 
+import model.Prova;
+
+
 /**
  *
  * @author rredaaa
@@ -15,6 +18,10 @@ public class Info {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Prova p = new Prova("Reda", "Essalhi");
+        System.out.println(p);
+        
     }
     
 }
